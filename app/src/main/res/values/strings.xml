@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PaymentApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="common_action_pay">Оплатить</string>
+    <string name="common_field_amount">Введите сумму</string>
+    <string name="common_action_confirm">Применить</string>
+    <string name="error_toast_max_value">Превышено максимальное значение</string>
+    <string name="error_input_max_length">Достигнуто максимальное количество символов</string>
+    <string name="error_calculation">"Ошибка вычисления"</string>
+    <string name="common_success">Success</string>
+    <string name="common_error">Error</string>
+    <string name="action_back_to_menu">Назад в меню</string>
+    <string name="common_status">Статус</string>
+    <string name="common_history">История</string>
+    <string name="common_pay">Оплата</string>
+    <string name="common_title_main_menu">Главное меню</string>
+
+    <string name="history_title">История транзакций</string>
+    <string name="history_transaction_id">ID: %1$s</string>
+    <string name="history_transaction_date">Дата: %1$s</string>
+    <string name="history_transaction_amount">Сумма: %.2f UZS</string>
+    <string name="history_transaction_status_success">Статус: Успешно</string>
+    <string name="history_transaction_status_failed">Статус: Ошибка</string>
+    <string name="history_empty">История пуста</string>
+    <string name="error_calculation_any">Ошибка вычисления</string>
+    <string name="common_export_pdf">Export PDF</string>
+    <string name="toast_pdf_success">"PDF сохранен: "</string>
+    <string name="toast_pdf_failed">Ошибка при создании PDF</string>
+</resources>

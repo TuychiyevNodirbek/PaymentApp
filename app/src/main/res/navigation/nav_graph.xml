@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/amountInputFragment"
+        android:name="uz.example.paymentapp.presentation.ui.fragment.AmountInputFragment"
+        android:label="Amount Input"
+        tools:layout="@layout/fragment_amount_input" >
+        <action
+            android:id="@+id/action_amountInput_to_cardSimulation"
+            app:destination="@id/cardSimulationFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/cardSimulationFragment"
+        android:name="uz.example.paymentapp.presentation.ui.fragment.CardSimulationFragment"
+        android:label="Card Simulation"
+        tools:layout="@layout/fragment_card_simulation">
+        <action
+            android:id="@+id/action_cardSimulation_to_result"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="uz.example.paymentapp.presentation.ui.fragment.ResultFragment"
+        android:label="Result"
+        tools:layout="@layout/fragment_result">
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="uz.example.paymentapp.presentation.ui.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_amountInputFragment"
+            app:destination="@id/amountInputFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_transactionHistoryFragment"
+            app:destination="@id/transactionHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionHistoryFragment"
+        android:name="uz.example.paymentapp.presentation.ui.fragment.TransactionHistoryFragment"
+        android:label="fragment_transaction_history"
+        tools:layout="@layout/fragment_transaction_history" />
+</navigation>

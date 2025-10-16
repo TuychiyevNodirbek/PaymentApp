@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridKeyboard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="3"
+    android:rowCount="4"
+    android:background="#F5F5F5"
+    android:useDefaultMargins="false"
+    tools:ignore="HardcodedText">
+
+    <TextView android:id="@+id/btn1" android:text="1"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn2" android:text="2"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn3" android:text="3"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView android:id="@+id/btn4" android:text="4"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn5" android:text="5"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn6" android:text="6"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView android:id="@+id/btn7" android:text="7"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn8" android:text="8"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn9" android:text="9"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView android:id="@+id/btnClear" android:text="C"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btn0" android:text="0"
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+    <TextView android:id="@+id/btnDot"
+        android:text="."
+        style="@style/CalcKey"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+</GridLayout>

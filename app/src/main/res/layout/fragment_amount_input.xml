@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="12dp"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnCalculator"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Калькулятор"
+            android:src="@drawable/ic_math_operations" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="12dp"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:minHeight="48dp"
+            android:singleLine="true"
+            android:text="0"
+            android:textSize="32sp" />
+
+
+        <ImageButton
+            android:id="@+id/btnDeleteChar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Удалить символ"
+            android:src="@drawable/ic_backspace" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/payButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/bg_action_pay"
+        android:gravity="center"
+        android:minHeight="56dp"
+        android:text="@string/common_action_pay"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SpUsage" />
+
+    <include
+        android:id="@+id/keyboard"
+        layout="@layout/numeric_keyboard"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginVertical="12dp"
+        app:layout_constraintBottom_toTopOf="@id/payButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
